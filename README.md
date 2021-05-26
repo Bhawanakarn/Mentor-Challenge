@@ -1,5 +1,5 @@
 # Introduction 
-This repository is a sandbox where anyone can create a branch and experiment with the included assets, based off of the Frontend Mentor [stats preview card project](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-component-O6OB6e0Qs).
+This repository is a sandbox where anyone can create a branch and experiment with the included assets, based off of the Frontend Mentor [stats preview card project](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
 
 # Getting Started
 To get your local sandbox up and running, follow these simple steps:
