@@ -14,6 +14,13 @@ p1{
 	font-size: 15px;;
 }
 
+.n1{
+	color: hsl(0, 0%, 100%);
+}
+
+.c1{
+	color: hsla(0, 0%, 100%, 0.75);
+}
 
 /* body{
     color: blue;
