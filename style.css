@@ -26,145 +26,136 @@ p1{
 
 /*-------------------------------------------------*/
 
+/*The color using css variables*/
+:root{
+	--primary-dark-blue: hsl(233, 47%, 7%);
+	--primary-desaturated-blue: hsl(244, 38%, 16%);
+	--primary-soft-violet: hsl(277, 64%, 61%);
+	--neutral-white: hsl(0, 0%, 100%);
+	--neutral-slightly-transparent-white-main: hsla(0, 0%, 100%, 0.75);
+	--neutral-slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+
 body {
-  background-color: hsl(233, 47%, 7%);
-  color: hsl(0, 0%, 100%);
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-}
-
-.containter {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  padding: 0;
-  position: relative;
-}
-
-.center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.model-center {
-  width: 80%;
-  /* height: 70%; */
-  margin: auto;
-  min-height: 100px;
-  display: flex;
-  flex-direction: row;
-}
-
-.model-center #left {
-  width: 50%;
-  background-color: hsl(244, 38%, 16%);
-}
-
-.model-center #right {
-  width: 49%;
-  background-color: hsl(244, 38%, 16%);
-  overflow: hidden;
-}
-
-.model-center #inner {
-  /* width: 39%; */
-  margin: auto;
-  padding: 50px;
-  min-height: 200px;
-}
-
-.purple-text {
-  color: hsl(277, 64%, 61%);
-}
-
-.title {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.stat-text {
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: "Lexend Deca", sans-serif;
-}
-
-.stats-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: hsl(0, 0%, 100%);
-}
-
-.subtitle {
-  font-size: 15px;
-  line-height: 24px;
-}
-
-.stats {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-#first {
-  width: 33%;
-  color: hsla(0, 0%, 100%, 0.6);
-}
-
-#second {
-  width: 33%;
-  color: hsla(0, 0%, 100%, 0.6);
-  /* text-align: center; */
-}
-
-#third {
-  width: 33%;
-  color: hsla(0, 0%, 100%, 0.6);
-  /* text-align: right; */
-}
-
-.rightbg {
-  background: url("images/image-header-desktop.jpg") top center;
-  background-size: cover;
-}
-
-.coloroverlay {
-  width: 100%;
-  height: 100%;
-  background-color: hsl(277, 64%, 61%);
-  opacity: 0.5;
-}
-
-@media (min-width: 375px) and (max-width: 812px) {
+	background-color: var(--primary-dark-blue);
+	color: var(--neutral-white);
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+  }
+  
+  .containter {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 0;
+	position: relative;
+  }
+  
+  .center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  }
+  
+  .vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+  }
+  
   .model-center {
-    flex-direction: column-reverse !important;
+	width: 80%;
+	/* height: 70%; */
+	margin: auto;
+	min-height: 100px;
+	display: flex;
+	flex-direction: row;
   }
-
+  
+  .model-center #left {
+	width: 50%;
+	background-color: var(--primary-desaturated-blue);
+  }
+  
+  .model-center #right {
+	width: 49%;
+	background-color: var(--primary-desaturated-blue);
+	overflow: hidden;
+  }
+  
+  .model-center #inner {
+	margin: auto;
+	padding: 50px;
+	min-height: 200px;
+  }
+  
+  .title {
+	font-size: 32px;
+	font-weight: 700;
+  }
+  
+  .stat-text {
+	color: var(--neutral-slightly-transparent-white-main);
+	font-family: "Lexend Deca", sans-serif;
+  }
+  
+  .stats-title {
+	font-size: 24px;
+	font-weight: 700;
+	color: var(--neutral-white);
+  }
+  
+  .subtitle {
+	font-size: 15px;
+	line-height: 24px;
+  }
+  
   .stats {
-    flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
   }
-
-  #first,
-  #second,
-  #third {
-    margin-bottom: 10px;
+  
+  #first, #second, #third {
+	width: 33%;
+	color: var(--neutral-slightly-transparent-white-stat);
   }
-
-  #left,
-  #right {
-    width: auto !important;
+  
+  .rightbg {
+	background: url("images/image-header-desktop.jpg");
+	background-size: cover;
   }
-}
-
+  
+  .coloroverlay {
+	width: 100%;
+	height: 100%;
+	background-color: var(--primary-soft-violet);
+	opacity: 0.5;
+  }
+  
+  @media (min-width: 375px) and (max-width: 812px) {
+	.model-center {
+	  flex-direction: column-reverse !important;
+	}
+  
+	.stats {
+	  flex-direction: column;
+	}
+  
+	#first, #second, #third {
+	  margin-bottom: 10px;
+	}
+  
+	#left,
+	#right {
+	  width: auto !important;
+	}
+  }
 /*-------------------------------------------------*/
 
 
