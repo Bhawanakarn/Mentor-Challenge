@@ -84,10 +84,13 @@ body {
   min-height: 200px;
 }
 
+.purple-text {
+  color: hsl(277, 64%, 61%);
+}
+
 .title {
   font-size: 32px;
   font-weight: 700;
-  color: hsl(0, 0%, 100%);
 }
 
 .stat-text {
@@ -120,14 +123,15 @@ body {
 #second {
   width: 33%;
   color: hsla(0, 0%, 100%, 0.6);
+  /* text-align: center; */
 }
 
 #third {
   width: 33%;
   color: hsla(0, 0%, 100%, 0.6);
+  /* text-align: right; */
 }
 
-/* The styling of image begins*/
 .rightbg {
   background: url("images/image-header-desktop.jpg") top center;
   background-size: cover;
@@ -142,9 +146,9 @@ body {
 
 @media (min-width: 375px) and (max-width: 812px) {
   .model-center {
-    /* display: block !important; */
     flex-direction: column-reverse !important;
   }
+
   .stats {
     flex-direction: column;
   }
@@ -152,14 +156,11 @@ body {
   #first,
   #second,
   #third {
-    margin-bottom: 100%;
+    margin-bottom: 10px;
   }
 
+  #left,
   #right {
-    width: auto !important;
-  }
-
-  #left {
     width: auto !important;
   }
 }
